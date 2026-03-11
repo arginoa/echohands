@@ -58,22 +58,4 @@ The in-app **AI Help Room** is powered by **OpenRouter** using the **Mistral Sma
 - Practice strategies  
 The chatbot is responsive and visually accessible with support for font and color customization.
 
----
-
-## ⚙️ Built With
-
-- **Mediapipe HandLandmarker**
-- **ONNX.js**
-- **OpenRouter AI (Mistral)**
-- **Vanilla JavaScript, HTML, CSS**
-- **Google Colab (for model training)**
-
----
-
-## 🙏 Credits
-
-- **Designed and Created by The Khandakar Brothers** 
-- **Programming and Art by Khandakar Mahin**
-- **Backend, Cleanup, and Staged by Khandakar Sayeem**
-- **Influenced by June Kim**
 
