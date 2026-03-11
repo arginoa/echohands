@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <div id="fallingLetters"></div>
+        <div id="predicted"></div>
+        <div id="score">Score: 0</div>
+        <div id="gameOverOverlay" style="display: none;">
+            <p id="finalScore">Your Score: 0</p>
+            <p id="highScore">High Score: 0</p>
+            <button id="playAgainButton">Play Again</button>
+        </div>
+    </div>
+
+
+    <!-- Floating Help Button -->
+<div id="helpButton">❓</div>
+
+<!-- Help Modal -->
+<div id="helpModal">
+  <div id="helpContent">
+    <div id="helpTabs">
+      <button class="tabBtn" data-tab="typing">Typing Tips</button>
+      <button class="tabBtn" data-tab="asl">ASL Practice</button>
+      <button class="tabBtn" data-tab="alphabet">ASL Alphabet</button>
+      <button class="tabBtn" data-tab="settings">Settings</button>
+    </div>
+    <div id="helpTabContent">
+      <div id="typing" class="tabContent active">
+        <p>💡 To improve typing, practice regularly using both ASL and QWERTY layouts.</p>
+      </div>
+      <div id="asl" class="tabContent">
+        <p>👐 Practice ASL using the app daily. Try spelling your name and common words!</p>
+      </div>
+      <div id="alphabet" class="tabContent">
+        <img src="ASLAlphabet.jpg" alt="ASL Alphabet" width="100%">
+      </div>
+      <div id="settings" class="tabContent">
+        <label for="fontSelect">Font:</label>
+        <select id="fontSelect">
+            <option value="Pixelify Sans">Pixelify Sans</option>
+            <option value="Arial">Arial</option>
+            <option value="Comic Sans MS">Comic Sans</option>
+            <option value="OpenDyslexic">OpenDyslexic</option>
+            <option value="Verdana">Verdana</option>
+            <option value="Atkinson Hyperlegible">Atkinson Hyperlegible</option>
+        </select>
+        <br>
+        <label for="themeSelect">Theme:</label>
+        <select id="themeSelect">
+            <option value="dark">Dark</option>
+            <option value="light">Light</option>
+            <option value="high-contrast">High Contrast</option>
+            <option value="blue">Soft Blue</option>
+            <option value="sepia">Sepia</option>
+            <option value="pink">Pastel Pink</option>
+        </select>
+        <br>
+        <label for="bgSelect">Background:</label>
+<select id="bgSelect">
+    <option value="default">Default</option>
+  <option value="cove">Cove</option>
+  <option value="ziggurat">Ziggurat</option>
+  <option value="village">Hidden Village</option>
+  <option value="urban">Urban Side</option>
+  <option value="dungeon">Dungeon</option>
+</select>
+      </div>
+    </div>
+   <!-- Chat Toggle Button -->
+<button id="toggleChat">💬 Open Chat</button>
+
+<!-- Chat Container -->
+<div id="chatContainer" style="display: none;">
+  <textarea id="chatInput" placeholder="Ask something..."></textarea>
+  <button id="sendChat">Send</button>
+  <div id="chatBox"></div>
+</div>
+
+
+  </div>
+</div>
+
+
+
+
+
+
+
+    <video id="webcam" autoplay="false" style="display: none;"></video>
+    <script src="https://cdn.jsdelivr.net/npm/onnxjs/dist/onnx.min.js"></script>
+    <script type="module" src="typing.js"></script>
+</body>
+</html>
